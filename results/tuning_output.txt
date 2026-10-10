@@ -1,0 +1,18 @@
+adult: network 91 -> 64 -> 32 -> 2, 5 epochs per run, seed 0, validation set of 3256
+ learning rate    BP val acc    PC val acc
+          0.01        0.8127        0.8007
+          0.05        0.8400        0.8262
+           0.1        0.8400        0.8323
+           0.2        0.8403        0.8381
+           0.5        0.8378        0.8391
+           1.0        0.8360        0.8363
+best learning rate: BP 0.2, PC 0.5; both use BP's best, 0.2
+mnist: network 784 -> 256 -> 128 -> 10, 5 epochs per run, seed 0, validation set of 6000
+ learning rate    BP val acc    PC val acc
+          0.01        0.9095        0.8868
+          0.05        0.9543        0.9378
+           0.1        0.9662        0.9502
+           0.2        0.9727        0.9577
+           0.5        0.9763        0.9633
+           1.0        0.9760        0.9665
+best learning rate: BP 0.5, PC 1.0; both use BP's best, 0.5

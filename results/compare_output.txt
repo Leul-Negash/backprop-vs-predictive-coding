@@ -1,0 +1,150 @@
+adult: shared settings {'batch_size': 64, 'optimizer': 'SGD', 'hidden_activation': 'relu', 'output_activation': 'linear', 'loss': '1/2 squared error', 'seeds': [0, 1, 2]}, lr 0.2, PC {'eta': 0.1, 'T': 20, 'mode': 'strict'}
+  seed 0 epoch  1  BP test 0.8416 (0.2s)  PC test 0.8324 (2.3s)  PC energy HL-1 0.0056 HL-2 0.0074 output 0.0061  cos(PC,BP) 0.844
+  seed 0 epoch  2  BP test 0.8415 (0.2s)  PC test 0.8379 (2.3s)  PC energy HL-1 0.0032 HL-2 0.0012 output 0.0002  cos(PC,BP) 0.955
+  seed 0 epoch  3  BP test 0.8480 (0.3s)  PC test 0.8400 (2.4s)  PC energy HL-1 0.0023 HL-2 0.0006 output 0.0001  cos(PC,BP) 0.954
+  seed 0 epoch  4  BP test 0.8472 (0.2s)  PC test 0.8425 (2.3s)  PC energy HL-1 0.0019 HL-2 0.0004 output 0.0001  cos(PC,BP) 0.970
+  seed 0 epoch  5  BP test 0.8405 (0.2s)  PC test 0.8417 (2.4s)  PC energy HL-1 0.0016 HL-2 0.0003 output 0.0000  cos(PC,BP) 0.975
+  seed 0 epoch  6  BP test 0.8477 (0.2s)  PC test 0.8428 (2.4s)  PC energy HL-1 0.0014 HL-2 0.0003 output 0.0000  cos(PC,BP) 0.972
+  seed 0 epoch  7  BP test 0.8470 (0.3s)  PC test 0.8431 (2.3s)  PC energy HL-1 0.0013 HL-2 0.0002 output 0.0000  cos(PC,BP) 0.958
+  seed 0 epoch  8  BP test 0.8488 (0.3s)  PC test 0.8431 (2.3s)  PC energy HL-1 0.0011 HL-2 0.0002 output 0.0000  cos(PC,BP) 0.964
+  seed 0 epoch  9  BP test 0.8493 (0.2s)  PC test 0.8432 (2.3s)  PC energy HL-1 0.0011 HL-2 0.0002 output 0.0000  cos(PC,BP) 0.975
+  seed 0 epoch 10  BP test 0.8489 (0.3s)  PC test 0.8430 (2.7s)  PC energy HL-1 0.0010 HL-2 0.0002 output 0.0000  cos(PC,BP) 0.976
+  seed 0 epoch 11  BP test 0.8493 (0.3s)  PC test 0.8434 (2.9s)  PC energy HL-1 0.0009 HL-2 0.0001 output 0.0000  cos(PC,BP) 0.978
+  seed 0 epoch 12  BP test 0.8493 (0.3s)  PC test 0.8430 (2.9s)  PC energy HL-1 0.0009 HL-2 0.0001 output 0.0000  cos(PC,BP) 0.979
+  seed 0 epoch 13  BP test 0.8500 (0.3s)  PC test 0.8437 (2.9s)  PC energy HL-1 0.0008 HL-2 0.0001 output 0.0000  cos(PC,BP) 0.987
+  seed 0 epoch 14  BP test 0.8493 (0.3s)  PC test 0.8415 (2.9s)  PC energy HL-1 0.0008 HL-2 0.0001 output 0.0000  cos(PC,BP) 0.995
+  seed 0 epoch 15  BP test 0.8476 (0.3s)  PC test 0.8428 (2.8s)  PC energy HL-1 0.0007 HL-2 0.0001 output 0.0000  cos(PC,BP) 0.985
+  seed 0 epoch 16  BP test 0.8360 (0.3s)  PC test 0.8420 (2.8s)  PC energy HL-1 0.0007 HL-2 0.0001 output 0.0000  cos(PC,BP) 0.995
+  seed 0 epoch 17  BP test 0.8499 (0.3s)  PC test 0.8419 (2.9s)  PC energy HL-1 0.0007 HL-2 0.0001 output 0.0000  cos(PC,BP) 0.991
+  seed 0 epoch 18  BP test 0.8512 (0.3s)  PC test 0.8437 (2.9s)  PC energy HL-1 0.0007 HL-2 0.0001 output 0.0000  cos(PC,BP) 0.985
+  seed 0 epoch 19  BP test 0.8488 (0.3s)  PC test 0.8430 (2.8s)  PC energy HL-1 0.0006 HL-2 0.0001 output 0.0000  cos(PC,BP) 0.985
+  seed 0 epoch 20  BP test 0.8506 (0.3s)  PC test 0.8423 (2.9s)  PC energy HL-1 0.0006 HL-2 0.0001 output 0.0000  cos(PC,BP) 0.977
+  seed 1 epoch  1  BP test 0.8356 (0.3s)  PC test 0.8449 (2.8s)  PC energy HL-1 0.0052 HL-2 0.0081 output 0.0063  cos(PC,BP) 0.861
+  seed 1 epoch  2  BP test 0.8453 (0.3s)  PC test 0.8446 (2.8s)  PC energy HL-1 0.0031 HL-2 0.0014 output 0.0002  cos(PC,BP) 0.905
+  seed 1 epoch  3  BP test 0.8484 (0.3s)  PC test 0.8443 (2.9s)  PC energy HL-1 0.0023 HL-2 0.0008 output 0.0001  cos(PC,BP) 0.921
+  seed 1 epoch  4  BP test 0.8441 (0.3s)  PC test 0.8444 (2.9s)  PC energy HL-1 0.0019 HL-2 0.0005 output 0.0001  cos(PC,BP) 0.958
+  seed 1 epoch  5  BP test 0.8458 (0.3s)  PC test 0.8412 (2.8s)  PC energy HL-1 0.0016 HL-2 0.0004 output 0.0001  cos(PC,BP) 0.990
+  seed 1 epoch  6  BP test 0.8494 (0.4s)  PC test 0.8444 (2.8s)  PC energy HL-1 0.0014 HL-2 0.0003 output 0.0000  cos(PC,BP) 0.980
+  seed 1 epoch  7  BP test 0.8501 (0.3s)  PC test 0.8449 (2.9s)  PC energy HL-1 0.0013 HL-2 0.0003 output 0.0000  cos(PC,BP) 0.966
+  seed 1 epoch  8  BP test 0.8493 (0.3s)  PC test 0.8449 (2.9s)  PC energy HL-1 0.0011 HL-2 0.0002 output 0.0000  cos(PC,BP) 0.965
+  seed 1 epoch  9  BP test 0.8475 (0.3s)  PC test 0.8423 (2.8s)  PC energy HL-1 0.0011 HL-2 0.0002 output 0.0000  cos(PC,BP) 0.985
+  seed 1 epoch 10  BP test 0.8490 (0.3s)  PC test 0.8432 (2.9s)  PC energy HL-1 0.0010 HL-2 0.0002 output 0.0000  cos(PC,BP) 0.983
+  seed 1 epoch 11  BP test 0.8493 (0.3s)  PC test 0.8425 (3.1s)  PC energy HL-1 0.0009 HL-2 0.0002 output 0.0000  cos(PC,BP) 0.981
+  seed 1 epoch 12  BP test 0.8458 (0.3s)  PC test 0.8435 (3.2s)  PC energy HL-1 0.0009 HL-2 0.0002 output 0.0000  cos(PC,BP) 0.982
+  seed 1 epoch 13  BP test 0.8477 (0.3s)  PC test 0.8440 (2.9s)  PC energy HL-1 0.0008 HL-2 0.0002 output 0.0000  cos(PC,BP) 0.992
+  seed 1 epoch 14  BP test 0.8466 (0.4s)  PC test 0.8426 (2.9s)  PC energy HL-1 0.0008 HL-2 0.0001 output 0.0000  cos(PC,BP) 0.984
+  seed 1 epoch 15  BP test 0.8477 (0.3s)  PC test 0.8429 (2.9s)  PC energy HL-1 0.0007 HL-2 0.0001 output 0.0000  cos(PC,BP) 0.985
+  seed 1 epoch 16  BP test 0.8488 (0.5s)  PC test 0.8426 (3.0s)  PC energy HL-1 0.0007 HL-2 0.0001 output 0.0000  cos(PC,BP) 0.988
+  seed 1 epoch 17  BP test 0.8475 (0.3s)  PC test 0.8427 (2.7s)  PC energy HL-1 0.0007 HL-2 0.0001 output 0.0000  cos(PC,BP) 0.987
+  seed 1 epoch 18  BP test 0.8480 (0.3s)  PC test 0.8428 (2.7s)  PC energy HL-1 0.0006 HL-2 0.0001 output 0.0000  cos(PC,BP) 0.986
+  seed 1 epoch 19  BP test 0.8401 (0.3s)  PC test 0.8401 (2.7s)  PC energy HL-1 0.0006 HL-2 0.0001 output 0.0000  cos(PC,BP) 0.996
+  seed 1 epoch 20  BP test 0.8439 (0.3s)  PC test 0.8417 (3.1s)  PC energy HL-1 0.0006 HL-2 0.0001 output 0.0000  cos(PC,BP) 0.996
+  seed 2 epoch  1  BP test 0.8434 (0.3s)  PC test 0.8363 (3.1s)  PC energy HL-1 0.0049 HL-2 0.0096 output 0.0066  cos(PC,BP) 0.803
+  seed 2 epoch  2  BP test 0.8461 (0.4s)  PC test 0.8416 (3.1s)  PC energy HL-1 0.0029 HL-2 0.0017 output 0.0003  cos(PC,BP) 0.885
+  seed 2 epoch  3  BP test 0.8462 (0.3s)  PC test 0.8383 (3.6s)  PC energy HL-1 0.0022 HL-2 0.0009 output 0.0001  cos(PC,BP) 0.973
+  seed 2 epoch  4  BP test 0.8347 (0.4s)  PC test 0.8387 (3.7s)  PC energy HL-1 0.0018 HL-2 0.0007 output 0.0001  cos(PC,BP) 0.978
+  seed 2 epoch  5  BP test 0.8422 (0.3s)  PC test 0.8411 (3.5s)  PC energy HL-1 0.0015 HL-2 0.0005 output 0.0001  cos(PC,BP) 0.932
+  seed 2 epoch  6  BP test 0.8437 (0.3s)  PC test 0.8433 (3.0s)  PC energy HL-1 0.0013 HL-2 0.0005 output 0.0000  cos(PC,BP) 0.951
+  seed 2 epoch  7  BP test 0.8467 (0.3s)  PC test 0.8447 (2.8s)  PC energy HL-1 0.0012 HL-2 0.0004 output 0.0000  cos(PC,BP) 0.951
+  seed 2 epoch  8  BP test 0.8479 (0.3s)  PC test 0.8433 (2.6s)  PC energy HL-1 0.0011 HL-2 0.0004 output 0.0000  cos(PC,BP) 0.970
+  seed 2 epoch  9  BP test 0.8460 (0.3s)  PC test 0.8435 (2.7s)  PC energy HL-1 0.0010 HL-2 0.0003 output 0.0000  cos(PC,BP) 0.970
+  seed 2 epoch 10  BP test 0.8487 (0.3s)  PC test 0.8433 (2.7s)  PC energy HL-1 0.0009 HL-2 0.0003 output 0.0000  cos(PC,BP) 0.959
+  seed 2 epoch 11  BP test 0.8472 (0.3s)  PC test 0.8438 (2.7s)  PC energy HL-1 0.0009 HL-2 0.0003 output 0.0000  cos(PC,BP) 0.938
+  seed 2 epoch 12  BP test 0.8491 (0.3s)  PC test 0.8447 (2.7s)  PC energy HL-1 0.0008 HL-2 0.0002 output 0.0000  cos(PC,BP) 0.951
+  seed 2 epoch 13  BP test 0.8439 (0.3s)  PC test 0.8422 (2.7s)  PC energy HL-1 0.0008 HL-2 0.0002 output 0.0000  cos(PC,BP) 0.975
+  seed 2 epoch 14  BP test 0.8487 (0.3s)  PC test 0.8429 (2.8s)  PC energy HL-1 0.0007 HL-2 0.0002 output 0.0000  cos(PC,BP) 0.971
+  seed 2 epoch 15  BP test 0.8431 (0.3s)  PC test 0.8407 (2.8s)  PC energy HL-1 0.0007 HL-2 0.0002 output 0.0000  cos(PC,BP) 0.986
+  seed 2 epoch 16  BP test 0.8503 (0.3s)  PC test 0.8425 (2.7s)  PC energy HL-1 0.0007 HL-2 0.0002 output 0.0000  cos(PC,BP) 0.962
+  seed 2 epoch 17  BP test 0.8412 (0.3s)  PC test 0.8420 (2.7s)  PC energy HL-1 0.0006 HL-2 0.0002 output 0.0000  cos(PC,BP) 0.982
+  seed 2 epoch 18  BP test 0.8474 (0.3s)  PC test 0.8421 (2.7s)  PC energy HL-1 0.0006 HL-2 0.0002 output 0.0000  cos(PC,BP) 0.982
+  seed 2 epoch 19  BP test 0.8498 (0.3s)  PC test 0.8426 (2.8s)  PC energy HL-1 0.0006 HL-2 0.0002 output 0.0000  cos(PC,BP) 0.977
+  seed 2 epoch 20  BP test 0.8461 (0.3s)  PC test 0.8429 (3.0s)  PC energy HL-1 0.0006 HL-2 0.0002 output 0.0000  cos(PC,BP) 0.970
+
+adult: 91 -> 64 -> 32 -> 2, 3 seeds, mean (std)
+                                                BP                    PC
+test accuracy (%)                     84.69 (0.28)          84.23 (0.05)
+balanced accuracy (%)                 75.55 (2.86)          74.92 (1.32)
+training time / epoch (s)              0.30 (0.02)           2.81 (0.14)
+test-set prediction (ms)               3.27 (0.45)           3.32 (0.65)
+learned parameters                           8,034                 8,034
+latent states (hidden+out)                       0                96 + 2
+multiply-adds per example                   17,984               224,768
+  (one forward pass)                         7,936                 7,936
+PC layer-wise energy after inference, last epoch: HL-1 0.0006  HL-2 0.0001  output 0.0000  total 0.0007
+cosine(PC update, BP gradient), last epoch: 0.9812
+test accuracy, both trained on 29305 examples, tested on 16281
+mnist: shared settings {'batch_size': 64, 'optimizer': 'SGD', 'hidden_activation': 'relu', 'output_activation': 'linear', 'loss': '1/2 squared error', 'seeds': [0, 1, 2]}, lr 0.5, PC {'eta': 0.1, 'T': 20, 'mode': 'strict'}
+  seed 0 epoch  1  BP test 0.9604 (1.0s)  PC test 0.9489 (14.8s)  PC energy HL-1 0.0038 HL-2 0.0131 output 0.0107  cos(PC,BP) 0.971
+  seed 0 epoch  2  BP test 0.9735 (1.0s)  PC test 0.9614 (12.5s)  PC energy HL-1 0.0021 HL-2 0.0035 output 0.0008  cos(PC,BP) 0.949
+  seed 0 epoch  3  BP test 0.9773 (1.0s)  PC test 0.9643 (12.2s)  PC energy HL-1 0.0016 HL-2 0.0022 output 0.0004  cos(PC,BP) 0.945
+  seed 0 epoch  4  BP test 0.9787 (1.1s)  PC test 0.9658 (12.1s)  PC energy HL-1 0.0013 HL-2 0.0016 output 0.0003  cos(PC,BP) 0.946
+  seed 0 epoch  5  BP test 0.9798 (1.0s)  PC test 0.9679 (14.0s)  PC energy HL-1 0.0011 HL-2 0.0013 output 0.0002  cos(PC,BP) 0.941
+  seed 0 epoch  6  BP test 0.9822 (1.2s)  PC test 0.9699 (14.0s)  PC energy HL-1 0.0010 HL-2 0.0011 output 0.0002  cos(PC,BP) 0.943
+  seed 0 epoch  7  BP test 0.9828 (1.4s)  PC test 0.9708 (12.7s)  PC energy HL-1 0.0009 HL-2 0.0009 output 0.0001  cos(PC,BP) 0.944
+  seed 0 epoch  8  BP test 0.9826 (1.0s)  PC test 0.9710 (12.5s)  PC energy HL-1 0.0008 HL-2 0.0008 output 0.0001  cos(PC,BP) 0.949
+  seed 0 epoch  9  BP test 0.9848 (1.0s)  PC test 0.9717 (12.1s)  PC energy HL-1 0.0008 HL-2 0.0007 output 0.0001  cos(PC,BP) 0.945
+  seed 0 epoch 10  BP test 0.9845 (1.1s)  PC test 0.9721 (12.1s)  PC energy HL-1 0.0007 HL-2 0.0007 output 0.0001  cos(PC,BP) 0.937
+  seed 0 epoch 11  BP test 0.9818 (1.0s)  PC test 0.9718 (12.3s)  PC energy HL-1 0.0007 HL-2 0.0006 output 0.0001  cos(PC,BP) 0.951
+  seed 0 epoch 12  BP test 0.9842 (1.0s)  PC test 0.9721 (15.0s)  PC energy HL-1 0.0006 HL-2 0.0006 output 0.0001  cos(PC,BP) 0.946
+  seed 0 epoch 13  BP test 0.9849 (1.1s)  PC test 0.9729 (12.2s)  PC energy HL-1 0.0006 HL-2 0.0005 output 0.0001  cos(PC,BP) 0.950
+  seed 0 epoch 14  BP test 0.9829 (1.0s)  PC test 0.9731 (12.2s)  PC energy HL-1 0.0006 HL-2 0.0005 output 0.0001  cos(PC,BP) 0.948
+  seed 0 epoch 15  BP test 0.9839 (1.0s)  PC test 0.9735 (12.3s)  PC energy HL-1 0.0005 HL-2 0.0005 output 0.0001  cos(PC,BP) 0.938
+  seed 0 epoch 16  BP test 0.9832 (1.0s)  PC test 0.9742 (12.4s)  PC energy HL-1 0.0005 HL-2 0.0005 output 0.0001  cos(PC,BP) 0.950
+  seed 0 epoch 17  BP test 0.9846 (1.0s)  PC test 0.9740 (12.1s)  PC energy HL-1 0.0005 HL-2 0.0004 output 0.0000  cos(PC,BP) 0.950
+  seed 0 epoch 18  BP test 0.9847 (1.1s)  PC test 0.9742 (12.1s)  PC energy HL-1 0.0005 HL-2 0.0004 output 0.0000  cos(PC,BP) 0.944
+  seed 0 epoch 19  BP test 0.9850 (1.1s)  PC test 0.9750 (12.2s)  PC energy HL-1 0.0004 HL-2 0.0004 output 0.0000  cos(PC,BP) 0.946
+  seed 0 epoch 20  BP test 0.9850 (1.1s)  PC test 0.9751 (14.4s)  PC energy HL-1 0.0004 HL-2 0.0004 output 0.0000  cos(PC,BP) 0.943
+  seed 1 epoch  1  BP test 0.9638 (1.0s)  PC test 0.9508 (12.1s)  PC energy HL-1 0.0041 HL-2 0.0126 output 0.0106  cos(PC,BP) 0.942
+  seed 1 epoch  2  BP test 0.9731 (1.0s)  PC test 0.9589 (12.3s)  PC energy HL-1 0.0022 HL-2 0.0033 output 0.0008  cos(PC,BP) 0.949
+  seed 1 epoch  3  BP test 0.9770 (1.0s)  PC test 0.9644 (12.1s)  PC energy HL-1 0.0017 HL-2 0.0021 output 0.0004  cos(PC,BP) 0.937
+  seed 1 epoch  4  BP test 0.9775 (1.0s)  PC test 0.9655 (14.1s)  PC energy HL-1 0.0014 HL-2 0.0015 output 0.0003  cos(PC,BP) 0.937
+  seed 1 epoch  5  BP test 0.9792 (1.3s)  PC test 0.9674 (13.3s)  PC energy HL-1 0.0012 HL-2 0.0012 output 0.0002  cos(PC,BP) 0.941
+  seed 1 epoch  6  BP test 0.9794 (1.0s)  PC test 0.9693 (12.0s)  PC energy HL-1 0.0011 HL-2 0.0010 output 0.0002  cos(PC,BP) 0.925
+  seed 1 epoch  7  BP test 0.9818 (1.1s)  PC test 0.9707 (13.3s)  PC energy HL-1 0.0010 HL-2 0.0009 output 0.0001  cos(PC,BP) 0.931
+  seed 1 epoch  8  BP test 0.9830 (1.1s)  PC test 0.9706 (12.8s)  PC energy HL-1 0.0009 HL-2 0.0008 output 0.0001  cos(PC,BP) 0.937
+  seed 1 epoch  9  BP test 0.9820 (1.1s)  PC test 0.9711 (13.9s)  PC energy HL-1 0.0008 HL-2 0.0007 output 0.0001  cos(PC,BP) 0.931
+  seed 1 epoch 10  BP test 0.9827 (1.1s)  PC test 0.9715 (14.0s)  PC energy HL-1 0.0007 HL-2 0.0006 output 0.0001  cos(PC,BP) 0.947
+  seed 1 epoch 11  BP test 0.9834 (1.1s)  PC test 0.9722 (13.1s)  PC energy HL-1 0.0007 HL-2 0.0006 output 0.0001  cos(PC,BP) 0.939
+  seed 1 epoch 12  BP test 0.9838 (1.6s)  PC test 0.9718 (12.3s)  PC energy HL-1 0.0007 HL-2 0.0005 output 0.0001  cos(PC,BP) 0.939
+  seed 1 epoch 13  BP test 0.9841 (1.0s)  PC test 0.9726 (12.7s)  PC energy HL-1 0.0006 HL-2 0.0005 output 0.0001  cos(PC,BP) 0.940
+  seed 1 epoch 14  BP test 0.9844 (1.0s)  PC test 0.9732 (11.9s)  PC energy HL-1 0.0006 HL-2 0.0005 output 0.0001  cos(PC,BP) 0.941
+  seed 1 epoch 15  BP test 0.9850 (1.0s)  PC test 0.9735 (11.9s)  PC energy HL-1 0.0006 HL-2 0.0004 output 0.0001  cos(PC,BP) 0.944
+  seed 1 epoch 16  BP test 0.9853 (1.1s)  PC test 0.9728 (12.2s)  PC energy HL-1 0.0005 HL-2 0.0004 output 0.0000  cos(PC,BP) 0.939
+  seed 1 epoch 17  BP test 0.9845 (1.1s)  PC test 0.9736 (12.0s)  PC energy HL-1 0.0005 HL-2 0.0004 output 0.0000  cos(PC,BP) 0.949
+  seed 1 epoch 18  BP test 0.9841 (1.1s)  PC test 0.9732 (11.9s)  PC energy HL-1 0.0005 HL-2 0.0004 output 0.0000  cos(PC,BP) 0.922
+  seed 1 epoch 19  BP test 0.9825 (1.0s)  PC test 0.9729 (11.7s)  PC energy HL-1 0.0005 HL-2 0.0003 output 0.0000  cos(PC,BP) 0.933
+  seed 1 epoch 20  BP test 0.9845 (1.0s)  PC test 0.9730 (11.8s)  PC energy HL-1 0.0005 HL-2 0.0003 output 0.0000  cos(PC,BP) 0.924
+  seed 2 epoch  1  BP test 0.9630 (1.0s)  PC test 0.9502 (11.8s)  PC energy HL-1 0.0039 HL-2 0.0128 output 0.0105  cos(PC,BP) 0.955
+  seed 2 epoch  2  BP test 0.9736 (1.0s)  PC test 0.9595 (11.8s)  PC energy HL-1 0.0021 HL-2 0.0033 output 0.0008  cos(PC,BP) 0.950
+  seed 2 epoch  3  BP test 0.9763 (1.0s)  PC test 0.9637 (11.7s)  PC energy HL-1 0.0016 HL-2 0.0021 output 0.0004  cos(PC,BP) 0.955
+  seed 2 epoch  4  BP test 0.9784 (1.0s)  PC test 0.9657 (12.7s)  PC energy HL-1 0.0014 HL-2 0.0015 output 0.0003  cos(PC,BP) 0.962
+  seed 2 epoch  5  BP test 0.9811 (1.1s)  PC test 0.9666 (12.6s)  PC energy HL-1 0.0012 HL-2 0.0012 output 0.0002  cos(PC,BP) 0.955
+  seed 2 epoch  6  BP test 0.9814 (1.1s)  PC test 0.9667 (13.1s)  PC energy HL-1 0.0010 HL-2 0.0010 output 0.0002  cos(PC,BP) 0.943
+  seed 2 epoch  7  BP test 0.9807 (1.1s)  PC test 0.9684 (12.7s)  PC energy HL-1 0.0009 HL-2 0.0009 output 0.0001  cos(PC,BP) 0.939
+  seed 2 epoch  8  BP test 0.9809 (1.1s)  PC test 0.9696 (12.9s)  PC energy HL-1 0.0009 HL-2 0.0008 output 0.0001  cos(PC,BP) 0.949
+  seed 2 epoch  9  BP test 0.9833 (1.0s)  PC test 0.9705 (12.3s)  PC energy HL-1 0.0008 HL-2 0.0007 output 0.0001  cos(PC,BP) 0.938
+  seed 2 epoch 10  BP test 0.9839 (1.0s)  PC test 0.9698 (12.2s)  PC energy HL-1 0.0007 HL-2 0.0006 output 0.0001  cos(PC,BP) 0.942
+  seed 2 epoch 11  BP test 0.9834 (1.0s)  PC test 0.9710 (12.6s)  PC energy HL-1 0.0007 HL-2 0.0006 output 0.0001  cos(PC,BP) 0.938
+  seed 2 epoch 12  BP test 0.9834 (1.1s)  PC test 0.9712 (12.3s)  PC energy HL-1 0.0006 HL-2 0.0005 output 0.0001  cos(PC,BP) 0.924
+  seed 2 epoch 13  BP test 0.9823 (1.0s)  PC test 0.9711 (12.1s)  PC energy HL-1 0.0006 HL-2 0.0005 output 0.0001  cos(PC,BP) 0.940
+  seed 2 epoch 14  BP test 0.9845 (1.0s)  PC test 0.9720 (12.1s)  PC energy HL-1 0.0006 HL-2 0.0005 output 0.0001  cos(PC,BP) 0.941
+  seed 2 epoch 15  BP test 0.9839 (1.0s)  PC test 0.9716 (12.1s)  PC energy HL-1 0.0006 HL-2 0.0004 output 0.0001  cos(PC,BP) 0.933
+  seed 2 epoch 16  BP test 0.9837 (1.0s)  PC test 0.9717 (12.1s)  PC energy HL-1 0.0005 HL-2 0.0004 output 0.0000  cos(PC,BP) 0.938
+  seed 2 epoch 17  BP test 0.9852 (1.0s)  PC test 0.9715 (12.1s)  PC energy HL-1 0.0005 HL-2 0.0004 output 0.0000  cos(PC,BP) 0.939
+  seed 2 epoch 18  BP test 0.9847 (1.0s)  PC test 0.9717 (12.0s)  PC energy HL-1 0.0005 HL-2 0.0004 output 0.0000  cos(PC,BP) 0.942
+  seed 2 epoch 19  BP test 0.9840 (1.0s)  PC test 0.9725 (12.1s)  PC energy HL-1 0.0005 HL-2 0.0004 output 0.0000  cos(PC,BP) 0.946
+  seed 2 epoch 20  BP test 0.9851 (1.2s)  PC test 0.9713 (12.5s)  PC energy HL-1 0.0004 HL-2 0.0004 output 0.0000  cos(PC,BP) 0.934
+
+mnist: 784 -> 256 -> 128 -> 10, 3 seeds, mean (std)
+                                                BP                    PC
+test accuracy (%)                     98.49 (0.03)          97.31 (0.16)
+balanced accuracy (%)                 98.47 (0.03)          97.30 (0.16)
+training time / epoch (s)              1.07 (0.02)          12.56 (0.21)
+test-set prediction (ms)              27.59 (0.29)          28.21 (0.33)
+learned parameters                         235,146               235,146
+latent states (hidden+out)                       0              384 + 10
+multiply-adds per example                  503,552             6,080,256
+  (one forward pass)                       234,752               234,752
+PC layer-wise energy after inference, last epoch: HL-1 0.0004  HL-2 0.0004  output 0.0000  total 0.0008
+cosine(PC update, BP gradient), last epoch: 0.9334
+test accuracy, both trained on 54000 examples, tested on 10000
