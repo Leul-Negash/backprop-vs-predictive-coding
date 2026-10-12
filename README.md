@@ -166,7 +166,7 @@ The inference phase (`python study_inference.py`, Adult, untrained network):
 | initial weights | PyTorch's default `nn.Linear` initialisation, one copy for each learner | identical starting points remove one source of difference. |
 | epochs and seeds | 20 epochs, seeds 0, 1, 2 | both accuracy curves are nearly flat by epoch 20; three seeds show the spread. |
 | PC inference rate η | 0.1, capped at `1 / (1 + ‖W(l+1)‖²)` | 0.1 is the slides' value; `study_inference.py` shows it is stable on the untrained network, while without the cap 1.0 is worse and 2.0 diverges. The cap keeps it stable as the weights grow (see above). |
-| PC steps T | 20 | `study_inference.py`: validation accuracy 83.66% at T = 20 vs 83.69% at T = 50, for less than half the time. |
+| PC steps T | 20 | `study_inference.py`: validation accuracy 83.66% at T = 20 vs 83.69% at T = 50, for less than half the time. It also follows the rule of thumb in the FabricPC talk (Behrend, 2026): at least as many steps as layers, typically 5 × depth, here 5 × 3 = 15. |
 | PC initialisation | forward pass | as in the slides. At step 0 the energy is only at the output (0.42), against 1.12 when the states start at zero, and it stays lower all the way. |
 | PC variant | strict (predictions recomputed every step) | that is what the slides do (their step 2 uses the new μ = 0.2665). |
 
@@ -213,21 +213,28 @@ change if every other layer's error is replaced by noise.
    for "relax these states for T steps, then update the weights once", so the two-phase loop is written by
    hand.
 
+The FabricPC library (Behrend, 2026) went through the same thing: its first version used PyTorch with explicitly
+coded gradients, as here, and the next version moved to JAX with gradients computed separately for each node,
+which made it about 2× faster.
+
 ## Which limitations of backprop does PC address?
 
-The limitations are the ones listed in the slides.
+The limitations are the ones listed in the slides; Ororbia and Kifer (2022) give the same list, plus one the slides
+leave out: a neuron must know the derivative of its own activation function.
 
 | limitation of BP (slides) | addressed by PC? |
 |---|---|
 | uses a global error signal | **yes.** Every update uses only `ε(l)`, `ε(l+1)` and neighbouring states; the test above shows a layer's update ignores every other error. |
 | separate global feedback pathway that changes weights but not activity | **yes.** In PC the errors change the neuron states themselves during inference, before any weight changes. |
 | update locking (a layer waits for the full forward and backward pass) | **partly.** All layers update at the same time from local errors, but they still wait for the T inference steps to finish. |
-| needs exact weight symmetry between forward and backward paths | **no.** The state update uses `W(l+1)ᵀ`, the transpose of the forward weights, so the same symmetry is still required. Removing it needs separate feedback weights. |
+| needs exact weight symmetry between forward and backward paths | **no.** The state update uses `W(l+1)ᵀ`, the transpose of the forward weights, so the same symmetry is still required. Removing it needs separate, learned feedback ("error") synapses, as in the neural generative coding framework of Ororbia and Kifer (2022). |
+| a neuron needs its own activation's derivative (Ororbia and Kifer) | **no.** Both the state update and the weight update use `A′(S)`. |
 | biologically implausible | **more plausible.** Local, Hebbian-like updates (error × activity) and error neurons, but still with weight symmetry and many inference steps per example. |
 
 PC also brings a problem BP does not have: its inference is an optimisation of its own, and it can become
 unstable. The step that is safe depends on the size of the weights, which keep changing during training
-(one of my runs crossed the limit before I added the cap).
+(one of my runs crossed the limit before I added the cap). The FabricPC team reports the same kind of problem
+and clips the latent gradients; I cap the step size instead.
 
 And what PC costs: T = 20 inference steps per training example, so many more multiply-adds per update than
 BP, and the extra memory for latent states and errors. At test time there is no difference at all, because
@@ -271,6 +278,13 @@ python make_figures.py         # redraws results/*.png
 ```
 
 The datasets download into `data/` the first time.
+
+## References
+
+- The training slides, "BackProp Vs Predictive Coding" (iCog Labs).
+- M. Behrend, *FabricPC: Predictive Coding Library for Scalable Research*, ActPC team, 2026.
+- A. Ororbia and D. Kifer, *The neural coding framework for learning generative models*, Nature Communications 13, 2064 (2022).
+- B. Millidge, A. Tschantz and C. L. Buckley, *Predictive Coding Approximates Backprop along Arbitrary Computation Graphs*, 2020 (the fixed-prediction assumption).
 
 ## Files
 
